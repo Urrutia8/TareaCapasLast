@@ -10,7 +10,7 @@
 <title>Editar Sucursal</title>
 </head>
 <body>
-	<h1 style="text-align: center;">Editar Sucursal: ${sucursal.nombre}</h1>
+	<h1">Editar Sucursal: ${sucursal.nombre}</h1>
 	<br>	
 	<div class="form-group" border-color: blue;">
 		<form:form action="${pageContext.request.contextPath}/actualizarSucursal" method="post" modelAttribute="sucursal">
@@ -40,7 +40,7 @@
 			<form:errors path="horarioFin" cssStyle="color: #ff0000;" />
 			<input class="form-control" type="text" name="horarioFin" path="horarioFin" value="${sucursal.horarioFin}" placeholder="21:00"/>
 			<br>
-			<input class="btn btn-success btn-block" type="submit" value="Guardar cambios"/>		
+			<input class="btn btn-info" type="submit" value="Guardar cambios"/>		
 		</form:form>
 	</div>
 	
@@ -70,7 +70,7 @@
 						<td style="text-align: center;">${empleado.estado}</td>
 						<td style="text-align: center;">
 							<button onclick="location.href='${pageContext.request.contextPath}/editarEmpleado?codigo=${empleado.codigo}'"
-							class="btn btn-primary">Ver Perfil</button>
+							class="btn btn-info">Ver Perfil</button>
 							
 							<button onclick="location.href='${pageContext.request.contextPath}/borrarEmpleado?codigo=${empleado.codigo}&id_sucursal=${sucursal.codigo}'"
 							class="btn btn-danger">Eliminar</button>

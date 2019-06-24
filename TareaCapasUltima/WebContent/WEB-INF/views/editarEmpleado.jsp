@@ -10,7 +10,7 @@
 <title>Editar Empleado</title>
 </head>
 <body>
-	<h1 style="text-align: center;">Editar Empleado: ${empleado.nombre}</h1>
+	<h1>Editar Empleado: ${empleado.nombre}</h1>
 	
 	<div class="container" border-color: blue;">
 		<form:form action="${pageContext.request.contextPath}/actualizarEmpleado" method="post" modelAttribute="empleado">
@@ -62,7 +62,7 @@
 				</c:forEach>
 			</form:select>
 			<br>
-			<input class="btn btn-success btn-block" type="submit" value="Guardar cambios"/>	
+			<input class="btn btn-info" type="submit" value="Guardar cambios"/>	
 		</form:form>
 	</div>
 </body>

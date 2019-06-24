@@ -21,7 +21,7 @@
 			<form:errors path="clave" cssStyle="color: #ff0000;" />
 			<form:input class="form-control" type="password" name="clave" path="clave"/>
 			<br>
-			<input class="btn btn-success btn-block" type="submit" value="Ingresar">
+			<input class="btn btn-info" type="submit" value="Ingresar">
 		</form:form>
 	</div>	
 	

@@ -13,7 +13,7 @@
 	<br>
 	<div class="container">
 		<form action="${pageContext.request.contextPath}/agregarSucursal">
-		<input class="btn btn-success" style="margin: auto;" type="submit" value="Agregar Sucursal"/>
+		<input class="btn btn-info" style="margin: auto;" type="submit" value="Agregar Sucursal"/>
 	</form>
 	</div>
 	<br>
@@ -36,7 +36,7 @@
 					<td style="text-align: center;">${sucursales.horarioFin}</td>
 					<td style="text-align: center;">
 						<button onclick="location.href='${pageContext.request.contextPath}/editarSucursal?codigo=${sucursales.codigo}'"
-						class="btn btn-primary">Ver Perfil</button>
+						class="btn btn-info">Ver Perfil</button>
 						<button onclick="location.href='${pageContext.request.contextPath}/borrarSucursal?codigo=${sucursales.codigo}'"
 						class="btn btn-danger">Eliminar</button>
 						<button onClick="location.href='${pageContext.request.contextPath}/agregarEmpleado?id_sucursal=${sucursales.codigo}'"
