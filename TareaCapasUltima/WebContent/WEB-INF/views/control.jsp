@@ -6,12 +6,12 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<title>Centro de control - Restaurante Rustico</title>
+<title>Centro de control</title>
 </head>
 <body>
-	<h1 style="text-align: center;">Centro de control de sucursales</h1>
+	<h1>Centro de control de sucursales</h1>
 	<br>
-	<div class="container" style="margin: auto;">
+	<div class="container">
 		<form action="${pageContext.request.contextPath}/agregarSucursal">
 		<input class="btn btn-success" style="margin: auto;" type="submit" value="Agregar Sucursal"/>
 	</form>

@@ -7,12 +7,12 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<title>Editar Empleado - Restaurante Rustico</title>
+<title>Editar Empleado</title>
 </head>
 <body>
 	<h1 style="text-align: center;">Editar Empleado: ${empleado.nombre}</h1>
 	
-	<div class="container" style="margin: auto; padding: 5px; width: 30%; border: solid;border-width: 1px; border-radius: 5px; border-color: gray;">
+	<div class="container" border-color: blue;">
 		<form:form action="${pageContext.request.contextPath}/actualizarEmpleado" method="post" modelAttribute="empleado">
 			<input class="form-control" type="hidden" name="codigo" path="codigo" value="${empleado.codigo}">
 			

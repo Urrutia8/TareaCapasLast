@@ -7,12 +7,12 @@
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<title>Editar Sucursal - Restaurante Rustico</title>
+<title>Editar Sucursal</title>
 </head>
 <body>
 	<h1 style="text-align: center;">Editar Sucursal: ${sucursal.nombre}</h1>
 	<br>	
-	<div class="form-group" style="margin: auto; padding: 5px; width: 30%; border: solid;border-width: 1px; border-radius: 5px; border-color: gray;">
+	<div class="form-group" border-color: blue;">
 		<form:form action="${pageContext.request.contextPath}/actualizarSucursal" method="post" modelAttribute="sucursal">
 			<input type="hidden" name="codigo" path="codigo" value="${sucursal.codigo}">
 			
