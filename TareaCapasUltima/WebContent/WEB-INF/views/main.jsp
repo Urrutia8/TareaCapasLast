@@ -15,7 +15,7 @@
 		<form:form action="${pageContext.request.contextPath}/login" method="post" modelAttribute="usuario">
 			<label for="usuario">Usuario:</label>
 			<form:errors path="usuario" cssStyle="color: #ff0000;" />
-			<form:input class="form-control" type="text" name="usuario" path="usuario" placeholder="jbalvin"/>
+			<form:input class="form-control" type="text" name="usuario" path="usuario"/>
 			<br>
 			<label for="password">Contrase&ntilde;a:</label>
 			<form:errors path="clave" cssStyle="color: #ff0000;" />
